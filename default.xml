@@ -21,7 +21,7 @@
   <contactinfo bugurl="go/repo-bug" />
 
   <!-- AOSP Projects -->
-  <project path="build/make" name="OnePlus-SM8850-Development/android_build" groups="pdk,sysui-studio" >
+  <project path="build/make" name="android_build" remote="petal" revision="petal-23.2" groups="pdk,sysui-studio" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
@@ -33,7 +33,7 @@
   <project path="build/pesto" name="platform/build/pesto" groups="pdk" remote="aosp" />
   <project path="build/release" name="LineageOS/android_build_release" groups="pdk,tradefed,sysui-studio" />
   <project path="build/soong" name="LineageOS/android_build_soong" groups="pdk,tradefed,sysui-studio" />
-  <project path="art" name="platform/art" groups="pdk" remote="aosp" />
+  <project path="art" name="platform_art" groups="pdk" remote="petal" revision="petal-23.2" />
   <project path="bionic" name="LineageOS/android_bionic" groups="pdk" />
   <project path="bootable/deprecated-ota" name="LineageOS/android_bootable_deprecated-ota" groups="pdk-cw" />
   <project path="bootable/recovery" name="LineageOS/android_bootable_recovery" groups="pdk" />
@@ -205,7 +205,7 @@
   <project path="external/google-fonts/source-sans-pro" name="platform/external/google-fonts/source-sans-pro" groups="pdk" remote="aosp" />
   <project path="external/google-fonts/zilla-slab" name="platform/external/google-fonts/zilla-slab" groups="pdk" remote="aosp" />
   <project path="external/google-fruit" name="platform/external/google-fruit" groups="pdk" remote="aosp" />
-  <project path="external/google-highway" name="platform/external/google-highway" groups="pdk" remote="aosp" />
+  <project path="external/google-highway" name="platform_external_google-highway" groups="pdk" remote="petal" revision="petal-23.2" />
   <project path="external/google-java-format" name="platform/external/google-java-format" groups="pdk" remote="aosp" />
   <project path="external/google-smali" name="platform/external/google-smali" groups="pdk" remote="aosp" />
   <project path="external/googleapis" name="platform/external/googleapis" groups="pdk,tradefed" remote="aosp" />
@@ -514,7 +514,7 @@
   <project path="external/sg3_utils" name="platform/external/sg3_utils" groups="pdk" remote="aosp" />
   <project path="external/shaderc/spirv-headers" name="platform/external/shaderc/spirv-headers" groups="pdk" remote="aosp" />
   <project path="external/shflags" name="platform/external/shflags" groups="pdk" remote="aosp" />
-  <project path="external/skia" name="platform/external/skia" groups="pdk,qcom_msm8x26" remote="aosp" />
+  <project path="external/skia" name="platform_external_skia" groups="pdk,qcom_msm8x26" remote="petal" revision="petal-23.2" />
   <project path="external/sl4a" name="platform/external/sl4a" groups="pdk" remote="aosp" />
   <project path="external/slf4j" name="platform/external/slf4j" groups="pdk" remote="aosp" />
   <project path="external/smack" name="platform/external/smack" groups="pdk" remote="aosp" />
@@ -584,7 +584,7 @@
   <project path="external/wuffs-mirror-release-c" name="platform/external/wuffs-mirror-release-c" groups="pdk,qcom_msm8x26" remote="aosp" />
   <project path="external/wycheproof" name="platform/external/wycheproof" groups="pdk" remote="aosp" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" groups="pdk" remote="aosp" />
-  <project path="external/XMP-Toolkit-SDK" name="platform/external/XMP-Toolkit-SDK" groups="pdk" remote="aosp" />
+  <project path="external/XMP-Toolkit-SDK" name="platform_external_XMP-Toolkit-SDK" groups="pdk" remote="petal" revision="petal-23.2" />
   <project path="external/XNNPACK" name="platform/external/XNNPACK" groups="pdk" remote="aosp" />
   <project path="external/xz-embedded" name="platform/external/xz-embedded" groups="pdk" remote="aosp" />
   <project path="external/xz-java" name="platform/external/xz-java" groups="pdk" remote="aosp" />
@@ -595,7 +595,7 @@
   <project path="external/zucchini" name="platform/external/zucchini" groups="pdk" remote="aosp" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk" remote="aosp" />
   <project path="frameworks/av" name="LineageOS/android_frameworks_av" groups="pdk,sysui-studio" />
-  <project path="frameworks/base" name="LineageOS/android_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="petal" revision="petal-23.2" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" remote="aosp" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" remote="aosp" />
@@ -675,7 +675,7 @@
   <project path="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" name="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" groups="pdk" clone-depth="1" remote="aosp" />
   <project path="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" name="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" groups="pdk" clone-depth="1" remote="aosp" />
   <project path="kernel/tests" name="kernel/tests" groups="vts,pdk" remote="aosp" />
-  <project path="libcore" name="platform/libcore" groups="pdk" remote="aosp" />
+  <project path="libcore" name="platform_libcore" groups="pdk" remote="petal" revision="petal-23.2" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" remote="aosp" />
   <project path="packages/apps/AvatarPicker" name="platform/packages/apps/AvatarPicker" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
@@ -719,7 +719,7 @@
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/ImsServiceEntitlement" name="platform/packages/apps/ImsServiceEntitlement" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/KeyChain" name="LineageOS/android_packages_apps_KeyChain" groups="pdk-fs" />
-  <project path="packages/apps/Launcher3" name="LineageOS/android_packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="petal" revision="petal-23.2" groups="pdk-fs,sysui-studio,pdk-cw-tvc" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/Messaging" name="LineageOS/android_packages_apps_Messaging" groups="pdk-fs" />
   <project path="packages/apps/Multiuser" name="platform/packages/apps/Multiuser" groups="pdk-fs" remote="aosp" />
@@ -734,14 +734,14 @@
   <project path="packages/apps/SafetyRegulatoryInfo" name="platform/packages/apps/SafetyRegulatoryInfo" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/SampleLocationAttribution" name="platform/packages/apps/SampleLocationAttribution" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/SecureElement" name="platform/packages/apps/SecureElement" groups="apps_se,pdk-fs,pdk-cw-fs" remote="aosp" />
-  <project path="packages/apps/Settings" name="LineageOS/android_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="petal" revision="petal-23.2" groups="pdk-fs,pdk-cw-tvc,sysui-studio" />
   <project path="packages/apps/SettingsIntelligence" name="LineageOS/android_packages_apps_SettingsIntelligence" groups="pdk-fs" />
   <project path="packages/apps/Stk" name="LineageOS/android_packages_apps_Stk" groups="apps_stk,pdk-fs" />
   <project path="packages/apps/StorageManager" name="platform/packages/apps/StorageManager" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/SystemUIGo" name="platform/packages/apps/SystemUIGo" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/Tag" name="LineageOS/android_packages_apps_Tag" groups="pdk-fs" />
   <project path="packages/apps/Test/connectivity" name="platform/packages/apps/Test/connectivity" groups="pdk" remote="aosp" />
-  <project path="packages/apps/ThemePicker" name="LineageOS/android_packages_apps_ThemePicker" groups="pdk-fs,sysui-studio" />
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="petal" revision="petal-23.2" groups="pdk-fs,sysui-studio" />
   <project path="packages/apps/Traceur" name="platform/packages/apps/Traceur" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="aosp" />
   <project path="packages/apps/TvFeedbackConsent" name="platform/packages/apps/TvFeedbackConsent" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/TvSettings" name="LineageOS/android_packages_apps_TvSettings" groups="pdk-fs,pdk-cw-tvc" />
@@ -753,14 +753,14 @@
   <project path="packages/inputmethods/LeanbackIME" name="LineageOS/android_packages_inputmethods_LeanbackIME" groups="pdk-fs" />
   <project path="packages/modules/adb" name="LineageOS/android_packages_modules_adb" groups="pdk" />
   <project path="packages/modules/AdServices" name="platform/packages/modules/AdServices" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="aosp" />
-  <project path="packages/modules/AppSearch" name="platform/packages/modules/AppSearch" groups="pdk" remote="aosp" />
+  <project path="packages/modules/AppSearch" name="platform_packages_modules_AppSearch" groups="pdk" remote="petal" revision="petal-23.2" />
   <project path="packages/modules/ArtPrebuilt" name="platform/packages/modules/ArtPrebuilt" groups="pdk" clone-depth="1" remote="aosp" />
-  <project path="packages/modules/Bluetooth" name="LineageOS/android_packages_modules_Bluetooth" groups="pdk" />
+  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="petal" revision="petal-23.2" groups="pdk" />
   <project path="packages/modules/CaptivePortalLogin" name="platform/packages/modules/CaptivePortalLogin" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/modules/CellBroadcastService" name="platform/packages/modules/CellBroadcastService" groups="pdk" remote="aosp" />
-  <project path="packages/modules/common" name="LineageOS/android_packages_modules_common" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/modules/common" name="android_packages_modules_common" remote="petal" revision="petal-23.2" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/modules/ConfigInfrastructure" name="platform/packages/modules/ConfigInfrastructure" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="packages/modules/Connectivity" name="LineageOS/android_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="petal" revision="petal-23.2" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/modules/CrashRecovery" name="platform/packages/modules/CrashRecovery" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/modules/DeviceLock" name="platform/packages/modules/DeviceLock" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/modules/desktop/Serviceability" name="platform/packages/modules/desktop/Serviceability" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
@@ -784,7 +784,7 @@
   <project path="packages/modules/RuntimeI18n" name="platform/packages/modules/RuntimeI18n" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/modules/Scheduling" name="platform/packages/modules/Scheduling" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/modules/SdkExtensions" name="platform/packages/modules/SdkExtensions" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="packages/modules/StatsD" name="platform/packages/modules/StatsD" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
+  <project path="packages/modules/StatsD" name="platform_packages_modules_StatsD" groups="pdk-cw-fs,pdk-fs" remote="petal" revision="petal-23.2" />
   <project path="packages/modules/Telecom" name="platform/packages/modules/Telecom" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/modules/Telephony" name="platform/packages/modules/Telephony" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/modules/ThreadNetwork" name="platform/packages/modules/ThreadNetwork" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
@@ -939,7 +939,7 @@
   <project path="system/teeui" name="platform/system/teeui" groups="pdk" remote="aosp" />
   <project path="system/testing/gtest_extras" name="platform/system/testing/gtest_extras" groups="pdk" remote="aosp" />
   <project path="system/timezone" name="platform/system/timezone" groups="pdk" remote="aosp" />
-  <project path="system/tools/aidl" name="platform/system/tools/aidl" groups="pdk" remote="aosp" />
+  <project path="system/tools/aidl" name="platform_system_tools_aidl" groups="pdk" remote="petal" revision="petal-23.2" />
   <project path="system/tools/hidl" name="platform/system/tools/hidl" groups="pdk" remote="aosp" />
   <project path="system/tools/mkbootimg" name="platform/system/tools/mkbootimg" groups="pdk" remote="aosp" />
   <project path="system/tools/sysprop" name="platform/system/tools/sysprop" groups="pdk" remote="aosp" />
