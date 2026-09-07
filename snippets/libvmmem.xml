@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Codelinaro dependency (was machine-local in .repo/local_manifests) -->
+  <remote name="codelinaro" fetch="https://git.codelinaro.org/" />
+  <project path="system/memory/libvmmem" name="clo/le/platform/system/memory/libvmmem" remote="codelinaro" revision="kernel.apps.lnx.4.0.r1-rel" />
+
+</manifest>

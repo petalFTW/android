@@ -1033,5 +1033,6 @@
   <include name="snippets/macan.xml" />
   <include name="snippets/macanc.xml" />
   <include name="snippets/petal.xml" />
+  <include name="snippets/libvmmem.xml" />
   <include name="snippets/infiniti.xml" />
 </manifest>
