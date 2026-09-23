@@ -4,4 +4,13 @@
   <!-- petalOS: custom work lives in the petalFTW org (projects redirected in-place) -->
   <remote name="petal" fetch="ssh://git@github.com/petalFTW/" />
 
+  <!-- petalOS: first-party projects -->
+  <project path="external/liblhdcv5" name="platform_external_liblhdcv5" remote="petal" revision="petal-23.2" />
+  <project path="hardware/bridge" name="android_hardware_bridge" remote="petal" revision="petal-23.2" />
+  <project path="hardware/dolby" name="android_hardware_dolby" remote="petal" revision="petal-23.2" />
+  <project path="packages/apps/GmsCompat" name="android_packages_apps_GmsCompat" remote="petal" revision="petal-23.2" />
+  <project path="packages/apps/PetalMusic" name="android_packages_apps_PetalMusic" remote="petal" revision="petal-23.2" />
+  <project path="tools/petal-systemui-module" name="platform_tools_petal-systemui-module" remote="petal" revision="petal-23.2" />
+  <project path="vendor/petal" name="android_vendor_petal" remote="petal" revision="petal-23.2" />
+
 </manifest>
